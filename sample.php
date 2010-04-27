@@ -1,6 +1,12 @@
 <?php
 	include 'ShortNumber.php';
 	$sn = new ShortNumber();
+
+	// Generante a random set of letters to the sample.	
+	$len = rand(2, $sn->getBase());
+	$l = substr($sn->getLetters(), 0, $len);
+	$sn->setLetters($l);
+	
 ?>
 
 <html>
